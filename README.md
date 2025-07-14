@@ -37,7 +37,6 @@ Design and implementation of IoT-LoRaGateway and IoT-LoRaNodes applied in a buil
 
 ## 🗂 Repository Structure (Example)
 
-/
 ├── hardware/ # PCB schematics, Gerbers, BOM
 
 ├── firmware/ # MCU code (C/C++), sensor drivers, LoRa/TCP‑IP stack
