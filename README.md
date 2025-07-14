@@ -64,7 +64,7 @@ hoặc dùng PlatformIO / STM32CubeIDE.
 
 Configure LoRa:
 
-Set frequency (920.9–923.3 MHz)
+Set frequency (433MHz)
 
 Configure gateway addresses
 
