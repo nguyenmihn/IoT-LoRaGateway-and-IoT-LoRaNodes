@@ -1,0 +1,234 @@
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.panel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1000px; /* hoặc auto */
+  margin: auto;
+}
+
+.rack {
+  background: #131313;
+  border: 2px solid #555;
+  width: 220px;           /* tăng chiều rộng */
+  height: 290px;          /* tăng chiều cao */
+  text-align: center;
+  padding: 16px 10px;     /* tăng padding trên/dưới */
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px rgba(255,255,255,0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.rack:hover {
+  border-color: #7a4823; /* màu xanh dương nổi bật */
+  box-shadow: 0 0 10px #5b340c;
+  transition: 0.2s ease-out;
+  z-index: 2;
+}
+
+.rack img {
+  width: 100px;
+  margin-bottom: 6px;
+}
+
+.sensor-id {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 6px;
+  white-space: pre-line; /* xuống dòng giữa ID và MAC */
+}
+
+.sensor-id .mac {
+  font-weight: normal;
+  color: #a0dfff;
+  font-size: 13px;
+  display: block;
+  margin-top: 2px;
+  padding-left: 0;
+  text-align: center; /* từ left → center để căn giữa MAC */
+}
+
+.details {
+  font-size: 13px;
+  margin-top: 8px;
+  text-align: left;
+  line-height: 1.4;  /* từ 1.6 → 1.4 để đỡ bị loãng */
+  padding-left: 6px;
+}
+
+.details div {
+  padding-left: 5px;
+}
+
+.details span {
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  border: 2px solid #888;
+  padding: 20px;
+  color: white;
+  z-index: 100;
+  display: none;
+}
+
+.popup.visible {
+  display: block;
+}
+
+.popup button {
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Cảnh báo nhiệt độ cao */
+.overheat {
+  border-color: red !important;
+  animation: blink 1s infinite;
+}
+
+.flame-alert {
+  border-color: orange !important;
+  animation: blink 1s infinite;
+}
+
+.rack.add-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  border: 2px dashed #666;
+  cursor: pointer;
+}
+.plus {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+.label {
+  font-size: 13px;
+}
+.close-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.logo-container img {
+  height: 40px; /* hoặc 50px tùy ý */
+  object-fit: contain;
+}
+.floor-buttons {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 998;
+}
+
+.floor-btn {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: left;
+  width: 100px;
+}
+
+.floor-btn:hover {
+  background-color: #333;
+  border-color: #00bfff;
+}
+
+.floor-btn.active {
+  background-color: #00bfff;
+  color: black;
+  font-weight: bold;
+}
+.add-floor-btn {
+  background-color: #444;
+  color: #ccc;
+  border: 1px dashed #888;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.add-floor-btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+.floor-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.floor-close {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: -4px;
+  padding: 0 4px;
+}
+
+#addForm input {
+  padding: 5px;
+  width: 90%;
+  max-width: 200px;
+}
+
+#addForm button {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+
+@keyframes blink {
+  0%, 100% { box-shadow: 0 0 5px red; }
+  50% { box-shadow: 0 0 15px red; }
+}

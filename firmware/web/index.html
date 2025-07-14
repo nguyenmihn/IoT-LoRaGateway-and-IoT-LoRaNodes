@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảng Giám Sát Cảm Biến</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logo-container">
+    <img src="Logo-IoTVisionc-01" alt="Logo" />
+  </div>
+
+  <div class="floor-buttons" id="floor-buttons">
+    <button class="floor-btn active" onclick="switchFloor('1')">Lầu 1</button>
+    <button class="floor-btn" onclick="switchFloor('2')">Lầu 2</button>
+    <button class="floor-btn" onclick="switchFloor('3')">Lầu 3</button>
+    <button class="add-floor-btn" onclick="showFloorNameForm()">+ Thêm lầu mới</button>
+  </div>
+
+  <div id="floor-panels">
+    <div class="panel-grid" data-floor="1" style="display: flex;">
+      <div class="rack" data-id="F024F9EB6164" data-display-id="01"></div>
+      <div class="rack" data-id="F024F9EB6165" data-display-id="02"></div>
+      <div class="rack" data-id="F024F9EB6166" data-display-id="03"></div>
+      <div class="rack" data-id="F024F9EB6167" data-display-id="04"></div>
+      <div class="rack" data-id="F024F9EB6168" data-display-id="05"></div>
+      <div class="rack" data-id="F024F9EB6169" data-display-id="06"></div>
+      <div class="rack add-new" onclick="showAddForm()">
+        <div class="plus">+</div>
+        <div class="label">Thêm tủ mới</div>
+      </div>
+    </div>
+
+    <div class="panel-grid" data-floor="2" style="display: none;">
+      <div class="rack add-new" onclick="showAddForm()">
+        <div class="plus">+</div>
+        <div class="label">Thêm tủ mới</div>
+      </div>
+    </div>
+
+    <div class="panel-grid" data-floor="3" style="display: none;">
+      <div class="rack add-new" onclick="showAddForm()">
+        <div class="plus">+</div>
+        <div class="label">Thêm tủ mới</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <h3 id="popup-id">Thông tin cảm biến</h3>
+    <p id="popup-content">Đang tải dữ liệu...</p>
+    <button onclick="hidePopup()">Đóng</button>
+  </div>
+
+  <div id="addForm" class="popup">
+    <h3>Nhập mã cảm biến mới</h3>
+    <input type="text" id="newSensorId" placeholder="Nhập địa chỉ MAC">
+    <br><br>
+    <button onclick="addNewRack()">Thêm</button>
+    <button onclick="hideAddForm()">Hủy</button>
+  </div>
+
+  <div id="floorNameForm" class="popup" style="display:none">
+    <h3>Đặt tên lầu mới</h3>
+    <input type="text" id="newFloorName" placeholder="VD: Lầu 4">
+    <br><br>
+    <button onclick="confirmAddNewFloor()">Tạo</button>
+    <button onclick="hideFloorNameForm()">Hủy</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
