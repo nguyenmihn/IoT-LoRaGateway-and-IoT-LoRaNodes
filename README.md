@@ -39,9 +39,11 @@ Design and implementation of IoT-LoRaGateway and IoT-LoRaNodes applied in a buil
 
 /
 ├── hardware/ # PCB schematics, Gerbers, BOM
+
 ├── firmware/ # MCU code (C/C++), sensor drivers, LoRa/TCP‑IP stack
+
 ├── gateway/ # LoRa gateway or server-side interface code
-├── hmi/ # GUI code for HMI panel (optional)
+
 └── README.md # This file
 
 yaml
