@@ -1,0 +1,62 @@
+#,Reference,Value,Datasheet,Footprint,Qty,DNP
+1,BT1,Battery_18650,~,IVS_FOOTPRINTS:XH 2.54 2Pin Female,1,
+2,"C1,C9,C10,C11,C12,C16,C18",10uF,~,IVS_FOOTPRINTS:C_0603,7,https://www.thegioiic.com/tu-gom-0603-10uf-25v
+3,"C2,C13,C17,C19,C23",100nF,~,IVS_FOOTPRINTS:C_0603,5,https://www.thegioiic.com/tu-gom-0603-100nf-0-1uf-50v
+4,"C3,C4,C6,C7,C8,C15,C21",1uF,~,IVS_FOOTPRINTS:C_0603,7,https://www.thegioiic.com/tu-gom-0603-1uf-50v
+5,C5,220uF 35V,~,Capacitor_SMD:CP_Elec_8x10.5,1,https://www.thegioiic.com/tu-nhom-smd-220uf-35v-8x10-5mm
+6,C14,110uF 10V,~,Capacitor_SMD:CP_Elec_6.3x5.4,1,https://www.thegioiic.com/tu-nhom-smd-330uf-6-3v-6-3x7-7mm
+7,"C29,C30",18p,~,IVS_FOOTPRINTS:C_0603,2,https://www.thegioiic.com/tu-gom-0603-18pf-50v
+8,"C31,C45,C46,C47,C48,C49,C50",0.1uF,~,-- mixed values --,7,
+9,C33,1nF/2kV,~,Capacitor_THT:C_Disc_D10.0mm_W2.5mm_P5.00mm,1,
+10,C34,22nF,~,IVS_FOOTPRINTS:C_0603,1,https://www.thegioiic.com/tu-gom-0603-22nf-50v
+11,"C35,C38",6.8nF,~,IVS_FOOTPRINTS:C_0805,2,https://www.thegioiic.com/tu-gom-0805-6-8nf-50v
+12,"C39,C40",10nF,~,IVS_FOOTPRINTS:C_0603,2,https://www.thegioiic.com/tu-gom-0603-10nf-50v
+13,C41,4.7uF,~,IVS_FOOTPRINTS:C_0603,1,
+14,"C51,C52",10 uF 16V,~,Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I,2,
+15,D1,LED_Dual_AKAK,~,IVS_FOOTPRINTS:LED_Housing_Dual,1,https://www.thegioiic.com/bo-chi-thi-2-led-xanh-la-do-3mm-de-nhua-han-pcb
+16,"D2,D3",SS34,,IVS_FOOTPRINTS:D_SMA,2,https://www.thegioiic.com/twgmc-ss34-sma-diode-schottky-3a
+17,F1,1A,~,IVS_FOOTPRINTS:F_1812,1,https://www.thegioiic.com/mf-msmf020-2-cau-chi-tu-phuc-hoi-1812-0-20a-30v
+18,FB1,FerriteBead,~,IVS_FOOTPRINTS:R_0805_2012Metric,1,
+19,H1,MountingHole,~,minh_iot:MountingHole_3mm_M4_DIN965_Pad,1,
+20,J1,Jack-DC,~,Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002,1,https://www.thegioiic.com/dc5521-dau-noi-nguon-dc-cai-5521-han-pcb-kim-2-1mm
+21,J2,Screw_Terminal_01x02,~,IVS_FOOTPRINTS:KF-5.08-2P,1,
+22,J3,Conn_01x06_Male,~,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1,
+23,J6,RJ45_Hanrun_HR911105A_Horizontal,https://datasheet.lcsc.com/lcsc/1811141815_HANRUN-Zhongshan-HanRun-Elec-HR911105A_C12074.pdf,Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal,1,
+24,JP1,SolderJumper_2_Open,~,IVS_FOOTPRINTS:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1,
+25,L1,VHF160808H2N2ST,~,Inductor_SMD:L_0603_1608Metric,1,https://www.thegioiic.com/vhf160808h2n2st-cuon-cam-2-2nh-0603-1a
+26,L2,22uH,~,Inductor_SMD:L_Bourns_SRN6045TA,1,https://www.thegioiic.com/cuon-cam-dan-smd-cd53-5852-220-22uh-1-5a
+27,L3,2.2uH,~,Inductor_SMD:L_Bourns_SRN6045TA,1,
+28,L4,47uH,~,IVS_FOOTPRINTS:L_7.3x7.3_H4.5,1,https://www.thegioiic.com/cuon-cam-dan-smd-cdrh74-7345-470-47uh-1-03a
+29,"Q1,Q3,Q5",SI2300,-- mixed values --,IVS_FOOTPRINTS:SOT23-3,3,https://www.thegioiic.com/si2300ds-mosfet-kenh-n-30v-3-6a-sot-23
+30,"Q2,Q4,Q6",SI2301,-- mixed values --,IVS_FOOTPRINTS:SOT23-3,3,https://www.thegioiic.com/si2301ds-mosfet-kenh-p-20v-2-3a-sot-23-3
+31,"R1,R6,R13,R14",1K,~,IVS_FOOTPRINTS:R_0603,4,
+32,"R2,R12,R17,R18",10K,~,IVS_FOOTPRINTS:R_0603,4,
+33,R3,12k,~,IVS_FOOTPRINTS:R_0603,1,
+34,R4,270K,~,IVS_FOOTPRINTS:R_0603,1,
+35,"R5,R9",1K2,~,IVS_FOOTPRINTS:R_0603,2,
+36,"R7,R11,R23,RV2",100K,~,-- mixed values --,4,
+37,"R8,R15,R24",20K,~,IVS_FOOTPRINTS:R_0603,3,
+38,R10,220K,~,IVS_FOOTPRINTS:R_0603,1,
+39,R16,2K7,~,IVS_FOOTPRINTS:R_0603,1,
+40,R36,1M,~,IVS_FOOTPRINTS:R_0603,1,
+41,"R37,R38,R45,R52,R53",0R,~,IVS_FOOTPRINTS:R_0603,5,
+42,"R46,R47",330R,~,IVS_FOOTPRINTS:R_0603,2,
+43,"R48,R50",49R9,~,IVS_FOOTPRINTS:R_0603,2,
+44,R51,10R,~,IVS_FOOTPRINTS:R_0805,1,
+45,"R54,R55",82R 1%,~,IVS_FOOTPRINTS:R_0805,2,
+46,R56,12.4k,~,IVS_FOOTPRINTS:R_0603,1,
+47,RV1,07D330K,~,Varistor:RV_Disc_D12mm_W4.2mm_P7.5mm,1,https://www.thegioiic.com/tu-chong-set-varistor-07d330k-33v
+48,SW1,MSK-38/SS-12D00,https://www.nidec-components.com/e/catalog/switch/cas.pdf,IVS_FOOTPRINTS:SW_MSK-38,1,
+49,"SW2,SW3",SW_Push,~,-- mixed values --,2,
+50,TP1,TestPoint,~,IVS_FOOTPRINTS:TestPoint_Pad_D1.0mm,1,
+51,U1,TPS62840DLCR,,IVS_FOOTPRINTS:VSON-HR - 1 mm,1,
+52,U2,BQ24075RGT,http://www.ti.com/lit/ds/symlink/bq24075.pdf,IVS_FOOTPRINTS:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias,1,
+53,U3,MT3608,https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf,IVS_FOOTPRINTS:SOT-23-6,1,https://www.thegioiic.com/mt3608-ic-dieu-chinh-tang-ap-2a-sot-23-6
+54,U4,XL1509,https://datasheet.lcsc.com/lcsc/1809050422_XLSEMI-XL1509-5-0E1_C61063.pdf,IVS_FOOTPRINTS:SOIC-8_3.9x4.9mm_P1.27mm,1,https://www.thegioiic.com/xl1509-5-0e1-ic-on-ap-5v-2a-8-soic
+55,U5,ESP32-WROOM-32UE,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf,IVS_FOOTPRINTS:ESP32-WROOM-32E,1,https://www.thegioiic.com/esp32-wroom-32e-n4-module-wifi-bluetooth-4mb-flash-2-4ghz
+56,U7,Ai-Thinker-Ra-02,http://wiki.ai-thinker.com/_media/lora/docs/c048ps01a1_ra-02_product_specification_v1.1.pdf,IVS_FOOTPRINTS:MODULE_RA-02_LORA,1,https://www.thegioiic.com/sx1278-lora-ra-02-ai-thinker-mach-thu-phat-rf-433mhz-10km
+57,U8,Ipex,https://datasheet.lcsc.com/lcsc/1811091710_HRS-Hirose-U-FL-R-SMT-1-80_C88374.pdf,IVS_FOOTPRINTS:Connector_Coaxial_SMA,1,https://www.thegioiic.com/ahcg-204-cong-rf-ipex-g1-2-chan-dan-smd
+58,U12,W5500,http://wizwiki.net/wiki/lib/exe/fetch.php/products:w5500:w5500_ds_v109e.pdf,Package_QFP:LQFP-48_7x7mm_P0.5mm,1,
+59,Y1,Crystal_MCU,https://docs.rs-online.com/ec34/0900766b816028ea.pdf,IVS_FOOTPRINTS:Crystal_3225_4P_3.2x2.6mm,1,
+60,Z1,3V3,,IVS_FOOTPRINTS:D_SOD-123,1,https://www.thegioiic.com/bzt52c5v1-diode-zener-5-1v-500mw
+61,Z2,12V,,IVS_FOOTPRINTS:D_SOD-123,1,
